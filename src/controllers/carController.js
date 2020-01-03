@@ -1,4 +1,5 @@
 const boom = require('boom')
+// lean: true -->return the raw js objects, not mongoose documents by passing `lean`
 
 // Get Data Models
 const Car = require('../models/Car')
