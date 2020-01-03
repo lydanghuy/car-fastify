@@ -5,10 +5,7 @@ const carSchema = new mongoose.Schema({
     brand: String,
     price: String,
     age: Number,
-    services: {
-        type: Map,
-        of: String
-    }
+    owner_id: ObjectId
 })
 
 module.exports = mongoose.model('Car', carSchema);
