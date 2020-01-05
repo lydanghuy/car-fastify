@@ -5,7 +5,7 @@ const carSchema = new mongoose.Schema({
     brand: String,
     price: String,
     age: Number,
-    owner_id: ObjectId
+    owner_id: mongoose.Schema.Types.ObjectId
 })
 
 module.exports = mongoose.model('Car', carSchema);
